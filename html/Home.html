@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopGames Hub</title>
+    <meta name="keywords" content="Games, HomeLand">
+    <meta name="author" content="Ahmed Nasr">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/Home.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../assets/logo.jpg" alt="logo">
+        <h3>TopGames Hub</h3>
+        <nav class="main-nav">
+            <ul class="navbarcontent">
+
+                <li><a href="#content" aria-label="Games"><i class="fa-solid fa-gamepad"></i>All Items</a></li>
+                <li><a href="LogToDiscover.html " aria-label="User"><i class="fa-solid fa-circle-user"></i>Profile</a>
+                </li>
+            </ul>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search...">
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main class="container">
+        <nav class="sidebar">
+            <h3 class="sidebar-title">Categories</h3>
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <a href="#">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>Games</span>
+                        <i class="fa-solid fa-chevron-down toggle-btn"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="LogToGame.html">BreakOut</a></li>
+                        <li><a href="LogToGame.html">Fighting</a></li>
+                        <li><a href="LogToGame.html">Platformer</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <span>Culture</span>
+                        <i class="fa-solid fa-chevron-down toggle-btn"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="LogToDiscover.html">Homeland</a></li>
+                        <li><a href="LogToDiscover.html">Open World</a></li>
+                        <li><a href="LogToDiscover.html">Exploration</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="content" id="content">
+            <section class="multi-column-section">
+                <h2 class="sectionHeader"> About Our Platform</h2>
+                <div class="column-content">
+                    <p>Discover a revolutionary approach to interactive learning through gaming. Our platform combines
+                        cutting-edge technology with historical accuracy to create immersive experiences that educate
+                        while they entertain. Explore different eras, cultures, and historical events through carefully
+                        crafted gameplay mechanics.</p>
+
+                    <p>From ancient civilizations to modern history, our games are developed in collaboration with
+                        historians and educators to ensure factual accuracy while maintaining engaging gameplay. Players
+                        can unlock historical documents, solve period-accurate puzzles, and interact with virtual
+                        recreations of famous landmarks.</p>
+
+                    <p>Whether you're a student looking to supplement your studies, a teacher seeking classroom
+                        resources, or simply a history enthusiast, our platform offers multiple ways to engage with the
+                        past. Features include timeline-based progression, multiplayer historical challenges, and
+                        virtual museum tours.</p>
+                </div>
+            </section>
+
+            <section id="games" class="games">
+                <h2 class="sectionHeader">All Items</h2>
+                <ul class="GamesList">
+                    <li class="gallery">
+                        <h2>Featured Games</h2>
+                        <a href="LogToGame.html">
+                            <img src="../assets/breakOut.png" alt="Breakout Game">
+                        </a>
+                        <p>Explore our collection of classic and modern arcade games.</p>
+                    </li>
+                    <li class="gallery">
+                        <h2>Discover Your Homeland</h2>
+                        <a href="LogToDiscover.html">
+                            <img src="../assets/HomeLand.png" alt="Historical Locations">
+                        </a>
+                        <p>Learn about your country's rich history and cultural heritage.</p>
+                    </li>
+                </ul>
+            </section>
+
+
+        </div>
+
+        <aside>
+            <h3>Sponsored</h3>
+            <div class="simple-ad" itemscope itemtype="http://schema.org/Organization">
+                <img src="../assets/kiaLogo.svg" alt="Kia" class="ad-logo" itemprop="logo">
+
+                <img src="../assets/kia2.jpg" alt="New Kia EV6" class="ad-image" itemprop="image">
+
+                <div class="ad-text">
+                    <h4 itemprop="name">Kia Motors</h4>
+                    <p itemprop="description">Experience electric innovation</p>
+
+                    <div class="ad-offer" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
+                        <p class="price" itemprop="price">$43,999</p>
+                        <p class="tagline" itemprop="description">Limited Time Offer</p>
+                        <meta itemprop="priceCurrency" content="USD">
+                    </div>
+
+                    <a href="https://www.kia.com" class="simple-cta" itemprop="url" target="_blank"
+                        rel="noopener noreferrer">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Platform. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+
+            <a target="_blank" href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i> </a>
+            <a target="_blank" href="https://www.facebook.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/accounts/login/?hl=en" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="../js/Home.js"></script>
+
+</body>
+
+</html>

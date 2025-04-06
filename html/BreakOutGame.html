@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+
+    <meta name="keywords" content="Games, BreakOut">
+    <meta name="author" content="Ahmed Nasr">
+    <!-- Add FontAwesome -->
+    <link rel="stylesheet" href="../css/Game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    
+</head>
+
+<body>
+
+
+
+    <header>
+        <a id="backHomeBtn" href="Home.html" title="Back Home">
+            <i class="fas fa-home"></i>
+        </a>
+        <h1>Breakout Game</h1>
+        <p>Last updated: <time datetime="2025-02-18">Feb 18, 2025</time></p>
+    </header>
+
+    <main>
+        <div class="part">
+            <h2>Game Instructions</h2>
+            <section>
+                <h3>How to Play</h3>
+                <p>
+                    Use the <mark>left</mark> and <mark>right</mark> arrow keys or touch controls to move the paddle.
+                    Break all the blocks to advance to the next level. Avoid letting the ball fall below the paddle.
+                </p>
+            </section>
+           
+            <section>
+                <h3>Scoring</h3>
+                <p>
+                    Each block broken gives you <mark>100 points</mark>. Complete all levels to win!
+                </p>
+            </section>
+            <section>
+                <h3>difficulty</h3>
+            <details>
+                <summary>More Details About Difficulty Levels</summary>
+                <p>Choose from three difficulty levels:</p>
+                    
+                <ul class="levels">
+                    <li>
+                        <strong>Easy</strong>:
+                        <meter value="3" min="1" max="7"></meter>
+                        Ball speed: <mark>3</mark>
+                    </li>
+                    <li>
+                        <strong>Medium</strong>:
+                        <meter value="5" min="1" max="7"></meter>
+                        Ball speed: <mark>5</mark>
+                    </li>
+                    <li>
+                        <strong>Hard</strong>:
+                        <meter value="7" min="1" max="7"></meter>
+                        Ball speed: <mark>7</mark>
+                    </li>
+                </ul>
+               
+            </details>
+               
+            </section>
+        </div>
+
+        <div class="part">
+            <h2>Play Game</h2>
+            <div id="gameInfo">
+                Score: <span id="score">0</span> |
+                Lives: <span id="lives">3</span> |
+                Level: <span id="level">1</span>
+            </div>
+            <canvas id="board"></canvas>
+
+            <div class="controls">
+                <div class="level-selector">
+                    <label for="levelSelect">Difficulty:</label>
+                    <select id="levelSelect">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <button id="startBtn">Start Game</button>
+                <button id="pauseBtn" disabled>Pause</button>
+
+                <audio id="myAudio" src="../assets/audio/gameMusic.mp3" loop></audio>
+
+
+                <div class="audio-controls">
+                    <button id="toggleAudioBtn" class="toggle-btn" onclick="toggleAudio()">⏸</button>
+                </div>
+
+            </div>
+
+            <div id="gameOverOverlay">
+                <h2 id="gameOverText">Game Over</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <p>Reached Level: <span id="finalLevel">1</span></p>
+                <button id="restartBtn">Play Again</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Breakout Game. All rights reserved.</p>
+    </footer>
+
+    
+
+
+    <script src="../js/BreakOutGame.js"></script>
+</body>
+
+</html>

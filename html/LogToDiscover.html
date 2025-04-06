@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="../css/LogInStyle.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <section class="social-icons">
+                <h5>Continue With</h5>
+
+                <a target="_blank" href="https://www.fb.com/"><img src="../assets/fb.png" alt="facebook"></a>
+                <a target="_blank" href="https://www.twitter.com/"><img src="../assets/tw.png" alt="twitter"></a>
+                <a target="_blank" href="https://www.google.com/"><img src="../assets/gp.png" alt="google"></a>
+            </section>
+
+            <form id="login" class="input-group" action="DiscoverYourHomeLand.html"  method="get">
+                <input type="email" class="input-field" placeholder="User Id"  required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box" ><span>Remember Password</span >
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <form id="register" class="input-group" action="#login"  method="get">
+                <input type="email" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password"   title="Password must be more than 6 char" minlength="7" required>
+                <input type="text" class="input-field" placeholder="Confirm Password"   title="Password must be more than 6 char" minlength="7" required>
+                <div class="upload-container">
+                    <label for="imageUpload" class="file-label">Choose an Image</label>
+                    <input type="file" id="imageUpload" accept="image/*" >
+                  
+                </div>
+                <input type="checkbox" class="check-box" required><span>I agree to the terms & condition</span >
+                <button type="submit" class="submit-btn">Regester</button>
+            </form>
+        </div>
+    </div>
+
+   <script src="../js/Login.js"></script>
+</body>
+
+</html>

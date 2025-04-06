@@ -1,0 +1,185 @@
+
+        body {
+            text-align: center;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+
+
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem;
+        }
+
+        .part {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .part h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        .part p {
+            line-height: 1.6;
+        }
+
+        mark {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+
+        meter {
+            width: 100%;
+            height: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        #board {
+            background-color: black;
+            border: 5px solid skyblue;
+            margin: 10px 0;
+        }
+
+        .controls {
+            margin: 15px 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        button:disabled {
+            background-color: #666;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        #gameInfo {
+            color: white;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        select {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #4CAF50;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .level-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        #gameOverOverlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+            z-index: 100;
+            width: 300px;
+        }
+
+        #restartBtn {
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            background: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #gameOverText {
+            font-size: 2rem;
+            margin: 0 0 1rem 0;
+        }
+
+        footer {
+            margin-top: 2rem;
+            color: #888;
+        }
+
+        /* Back Home Button */
+        #backHomeBtn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        #backHomeBtn:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #backHomeBtn i {
+            font-size: 24px;
+            color: white;
+        }
+
+        .levels li {
+            margin-bottom: 50px;
+
+        }
